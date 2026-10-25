@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="IT Academy Management System student project">
+    <title>Login | IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top"><a class="brand" href="index.html"><span class="logo">IA</span><span>IT Academy<small>MANAGEMENT
+                    SYSTEM</small></span></a>
+        <nav><a href="index.html">Home</a><a href="overview.html">Project</a><a href="courses.html">Courses</a><a
+                href="requirements.html">Requirements</a><a class="nav-login" href="login.html">Sign in ↗</a></nav>
+    </header>
+    <main>
+        <div class="login-bg">
+            <form class="login-card" id="loginForm">
+                <div class="logo">IA</div>
+                <div class="eyebrow" style="margin-top:22px">IT Academy · Portal access</div>
+                <h1>Welcome back.</h1>
+                <p class="muted">Sign in to open your academy workspace.</p>
+                <div class="field"><label for="email">Email address</label><input id="email" type="email"
+                        placeholder="you@academy.com" required></div>
+                <div class="field"><label for="password">Password</label><input id="password" type="password"
+                        placeholder="Enter any password for demo" required></div>
+                <div class="field"><label for="role">Continue as</label><select id="role">
+                        <option>Administrator</option>
+                        <option>Teacher</option>
+                        <option>Student</option>
+                    </select></div><button type="submit" style="width:100%;margin:10px 0">Sign in →</button>
+                <p id="loginMessage" class="small muted"></p>
+                <div class="notice">Student project demo: this is a front-end sign-in flow only. Do not enter a real
+                    password. Any email and password will open the demo dashboard.</div>
+                <p class="small" style="margin-top:18px"><a href="index.html">← Back to home</a></p>
+            </form>
+        </div>
+    </main>
+    <footer class="footer"><span>IT Academy Management System · Semester 3 project</span><span>Student project demo ·
+            Sample data only</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="IT Academy Management System student project">
+    <title>Students | IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top"><a class="brand" href="index.html"><span class="logo">IA</span><span>IT Academy<small>MANAGEMENT
+                    SYSTEM</small></span></a>
+        <nav><a href="index.html">Home</a><a href="overview.html">Project</a><a href="courses.html">Courses</a><a
+                href="requirements.html">Requirements</a><a class="nav-login" href="login.html">Sign in ↗</a></nav>
+    </header>
+    <main>
+        <div class="sidebar-layout">
+            <aside class="side">
+                <p>Workspace</p><a href="dashboard.html">▦ Overview</a><a class="active" href="students.html">♙
+                    Students</a><a href="courses.html">▤ Courses</a><a href="fees.html">₹ Fees</a><a
+                    href="progress.html">↗ Progress</a><a href="requirements.html">☷ Requirements</a><a
+                    href="modeling.html">⌘ Project models</a>
+            </aside>
+            <div class="main-area">
+                <div class="page-title">
+                    <div>
+                        <div class="eyebrow">People & records</div>
+                        <h2>Students</h2>
+                        <p class="muted">Keep student details together and easy to find.</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <form class="card" id="studentForm">
+                        <h3>Add student</h3>
+                        <div class="field"><label>Full name</label><input id="studentName" required
+                                placeholder="e.g. Asha Patel"></div>
+                        <div class="field"><label>Email</label><input id="studentEmail" type="email" required
+                                placeholder="student@example.com"></div>
+                        <div class="field"><label>Course</label><select id="studentCourse">
+                                <option>Web Development</option>
+                                <option>Java Programming</option>
+                                <option>Python & Data Science</option>
+                                <option>Cloud Computing</option>
+                            </select></div><button type="submit">Save student</button>
+                        <p class="small muted" id="studentMsg"></p>
+                    </form>
+                    <div class="card">
+                        <h3>Quick note</h3>
+                        <p class="muted">This demo saves records in this browser using local storage. It is not
+                            connected to a real database, so records stay on this device/browser.</p><span
+                            class="tag">Demo data</span>
+                    </div>
+                </div>
+                <div style="margin:25px 0 12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                    <h3>Student directory</h3><input class="search" id="studentSearch" placeholder="Search students…">
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><span>IT Academy Management System · Semester 3 project</span><span>Student project demo ·
+            Sample data only</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

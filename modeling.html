@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="IT Academy Management System student project">
+    <title>Modeling | IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top"><a class="brand" href="index.html"><span class="logo">IA</span><span>IT Academy<small>MANAGEMENT
+                    SYSTEM</small></span></a>
+        <nav><a href="index.html">Home</a><a href="overview.html">Project</a><a href="courses.html">Courses</a><a
+                href="requirements.html">Requirements</a><a class="nav-login" href="login.html">Sign in ↗</a></nav>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="eyebrow">07 / Design & modeling</div>
+            <h1>Plan the workflow before building.</h1>
+            <p class="muted">These are concise conceptual descriptions of the models used to explain the system
+                structure and behaviour.</p>
+            <div class="grid">
+                <article class="card">
+                    <div class="feature-icon">◎</div>
+                    <h3>Use case diagram</h3>
+                    <p class="muted">Shows how an administrator, teacher and student interact with registration,
+                        courses, fees and progress.</p><span class="tag">User interactions</span>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">▦</div>
+                    <h3>Class diagram</h3>
+                    <p class="muted">Describes core entities such as Student, Course, Payment, Progress and Certificate
+                        and their relationships.</p><span class="tag">System structure</span>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">⇄</div>
+                    <h3>Sequence diagram</h3>
+                    <p class="muted">Shows the order of messages during a common action, such as enrolling a student in
+                        a course.</p><span class="tag">Message flow</span>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">↘</div>
+                    <h3>Activity diagram</h3>
+                    <p class="muted">Maps the steps and decision points in workflows like fee payment or certificate
+                        issue.</p><span class="tag">Process flow</span>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">◷</div>
+                    <h3>State diagram</h3>
+                    <p class="muted">Represents changes in a record, for example Pending → Paid or Enrolled → Completed.
+                    </p><span class="tag">State changes</span>
+                </article>
+                <article class="card">
+                    <div class="feature-icon">⌘</div>
+                    <h3>Deployment diagram</h3>
+                    <p class="muted">Explains how the browser, web application and database could be deployed and
+                        connected.</p><span class="tag">Deployment setup</span>
+                </article>
+            </div>
+            <div class="band card" style="margin-top:22px">
+                <h3>Development approach</h3>
+                <p class="muted">A simple iterative approach fits this student project: gather requirements, sketch the
+                    screens and diagrams, build the main modules, test the flows, then improve from feedback. This
+                    describes the proposed workflow rather than claiming a formal Waterfall or Spiral model was used.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><span>IT Academy Management System · Semester 3 project</span><span>Student project demo ·
+            Sample data only</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

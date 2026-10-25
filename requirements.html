@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="IT Academy Management System student project">
+    <title>Requirements | IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top"><a class="brand" href="index.html">
+            <span class="logo">IA</span><span>IT Academy<small>MANAGEMENT SYSTEM</small>
+            </span></a>
+        <nav><a href="index.html">Home</a><a href="overview.html">Project</a>
+            <a href="courses.html">Courses</a><a href="requirements.html">Requirements</a>
+            <a class="nav-login" href="login.html">Sign in ↗</a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="eyebrow">06 / Requirement engineering</div>
+            <h1>What the system should do.</h1>
+            <p class="muted">These functional requirements describe the main expected actions for the academy management
+                system.</p>
+            <input id="reqSearch" class="search" style="width:min(440px,100%);margin:10px 0 22px"
+                placeholder="Search requirements…">
+            <div class="grid" id="reqGrid">
+                <article class="card req">
+                    <span class="number">FR-01</span>
+                    <h3>Student registration</h3>
+                    <p class="muted">The system shall allow authorised users to add and update student details.</p>
+                </article>
+                <article class="card req"><span class="number">FR-02</span>
+                    <h3>Course management</h3>
+                    <p class="muted">The system shall maintain course details and learning materials.</p>
+                </article>
+                <article class="card req"><span class="number">FR-03</span>
+                    <h3>Fee records</h3>
+                    <p class="muted">The system shall record payments and show pending balances.</p>
+                </article>
+                <article class="card req"><span class="number">FR-04</span>
+                    <h3>Progress tracking</h3>
+                    <p class="muted">The system shall display student progress and assessment status.</p>
+                </article>
+                <article class="card req"><span class="number">FR-05</span>
+                    <h3>Certificate management</h3>
+                    <p class="muted">The system shall track eligibility and certificate issue status.</p>
+                </article>
+                <article class="card req"><span class="number">FR-06</span>
+                    <h3>Secure login</h3>
+                    <p class="muted">The system shall provide sign-in and role-appropriate access.</p>
+                </article>
+                <article class="card req"><span class="number">FR-07</span>
+                    <h3>Search records</h3>
+                    <p class="muted">The system shall help users locate relevant student and course information.</p>
+                </article>
+                <article class="card req"><span class="number">FR-08</span>
+                    <h3>Generate summaries</h3>
+                    <p class="muted">The system shall provide useful summaries of enrolment and fees.</p>
+                </article>
+                <article class="card req"><span class="number">FR-09</span>
+                    <h3>Maintain records</h3>
+                    <p class="muted">The system shall keep records organised and available to authorised users.</p>
+                </article>
+            </div>
+            <p id="noReq" class="muted hidden">No matching requirements found.</p>
+            <div class="card" style="margin-top:24px">
+                <h3>Non-functional requirements</h3>
+                <div class="two">
+                    <p class="muted">Usability: pages should be clear and easy to learn.</p>
+                    <p class="muted">Security: private information should only be available to authorised users.</p>
+                    <p class="muted">Reliability: records should remain consistent and accurate.</p>
+                    <p class="muted">Performance: common searches and actions should feel responsive.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><span>IT Academy Management System · Semester 3 project</span><span>Student project demo ·
+            Sample data only</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

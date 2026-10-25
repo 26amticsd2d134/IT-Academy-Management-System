@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="IT Academy Management System student project">
+    <title>Dashboard | IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top"><a class="brand" href="index.html"><span class="logo">IA</span><span>IT Academy<small>MANAGEMENT
+                    SYSTEM</small></span></a>
+        <nav><a href="index.html">Home</a><a href="overview.html">Project</a><a href="courses.html">Courses</a><a
+                href="requirements.html">Requirements</a><a class="nav-login" href="login.html">Sign in ↗</a></nav>
+    </header>
+    <main>
+        <div class="sidebar-layout">
+            <aside class="side">
+                <p>Workspace</p><a class="active" href="dashboard.html">▦ Overview</a><a href="students.html">♙
+                    Students</a><a href="courses.html">▤ Courses</a><a href="fees.html">₹ Fees</a><a
+                    href="progress.html">↗ Progress</a><a href="requirements.html">☷ Requirements</a><a
+                    href="modeling.html">⌘ Project models</a>
+            </aside>
+            <div class="main-area">
+                <div class="page-title">
+                    <div>
+                        <div class="eyebrow">Your workspace</div>
+                        <h2 id="welcomeTitle">Good to see you.</h2>
+                        <p class="muted">Here’s a quick look at the academy today.</p>
+                    </div><a class="btn" href="students.html">＋ Add a student</a>
+                </div>
+                <div class="statgrid">
+                    <div class="stat"><span>STUDENTS</span><strong id="studentCount">248</strong><span>Registered
+                            learners</span></div>
+                    <div class="stat"><span>COURSES</span><strong>12</strong><span>Active courses</span></div>
+                    <div class="stat"><span>FEES TO REVIEW</span><strong>08</strong><span>Sample records</span></div>
+                    <div class="stat"><span>COMPLETION</span><strong>76%</strong><span>Overall progress</span></div>
+                </div>
+                <div class="two">
+                    <div class="card">
+                        <div class="section-head">
+                            <h3>Recent students</h3><a class="small" href="students.html">View all →</a>
+                        </div>
+                        <div id="recentStudents" class="muted small">Loading student records…</div>
+                    </div>
+                    <div class="card">
+                        <h3>Learning activity</h3>
+                        <p class="muted small">Illustrative progress across recent months</p>
+                        <div class="bars"><i style="height:38%"></i><i style="height:54%"></i><i
+                                style="height:48%"></i><i style="height:67%"></i><i style="height:61%"></i><i
+                                style="height:83%"></i><i style="height:75%"></i><i style="height:96%"></i></div>
+                        <div class="muted small">Mar　 Apr　 May　 Jun　 Jul　 Aug</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"><span>IT Academy Management System · Semester 3 project</span><span>Student project demo ·
+            Sample data only</span></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
