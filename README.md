@@ -1,9 +1,4 @@
-# IT Academy Management System — revised multipage website
-
-## Open the website
-1. Extract the ZIP file.
-2. Open `index.html` in Chrome or another modern browser.
-3. Use **Sign in** and enter any demo email and password to open the dashboard.
+# IT Academy Management System
 
 ## Pages
 - Home, Project Overview, Login, Dashboard
